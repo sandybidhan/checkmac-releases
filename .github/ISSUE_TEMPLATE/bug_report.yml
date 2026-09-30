@@ -1,0 +1,68 @@
+name: Bug report
+description: Something in MacDisk behaved incorrectly.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        Please do not paste full paths or folder listings if they contain
+        anything private — a description of the shape of the folder is usually
+        enough for us to reproduce it.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did MacDisk do instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Scanned my Home folder
+        2. Switched to the treemap
+        3. Double-clicked a folder
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: MacDisk version
+      description: From MacDisk → About MacDisk.
+      placeholder: "1.0.0 (1)"
+    validations:
+      required: true
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      description: From  → About This Mac.
+      placeholder: "macOS 15.2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scan-target
+    attributes:
+      label: What were you scanning?
+      options:
+        - A folder
+        - My Home folder
+        - A whole volume or external disk
+        - A saved scan snapshot
+        - Not scanning anything
+    validations:
+      required: true
+
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else?
+      description: Screenshots help, especially for layout problems.

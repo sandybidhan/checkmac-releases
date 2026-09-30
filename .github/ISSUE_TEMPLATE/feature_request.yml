@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest something MacDisk should do.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: >
+        Describe the problem rather than the solution where you can. Knowing
+        what you were trying to achieve often points at a better answer than
+        the one either of us had in mind.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like MacDisk to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: How do you work around it today?
