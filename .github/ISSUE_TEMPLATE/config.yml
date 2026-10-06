@@ -3,5 +3,5 @@ contact_links:
   - name: Upstream MacDisk
     url: https://github.com/colinvkim/MacDisk/issues
     about: >
-      This project is a fork. If you are using the original MacDisk from
+      CheckMac is a fork of MacDisk. If you are using the original MacDisk from
       trymacdisk.app or the Homebrew cask, report it there instead.
